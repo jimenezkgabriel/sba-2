@@ -19,10 +19,10 @@
             </div>
             <nav class="grid-item-3 nav-flex" role="navigation">
                 <ul class="nav-other-flex">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li> <a href="/services.html">Services</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/index.html" aria-label="index">Home</a></li>
+                    <li><a href="/about.html" aria-label="about">About</a></li>
+                    <li> <a href="/services.html" aria-label="services">Services</a></li>
+                    <li><a href="/contact.html" aria-label="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,21 +30,24 @@
     <h1 style="text-align: center; font-size: 4rem;">Contact</h1>
     <form class="contact-grid-container" role="form">
         <div class="contact-flex-container">
-            <label class="contact-flex-field" for="username">
+            <label class="contact-flex-field" id="usernameLabel" for="username">
                 Name
-                <input id="username" type="text" role="text" placeholder="John Smith" required>
+                <input id="username" type="text" role="text" aria-labelledby="usernameLabel" placeholder="John Smith"
+                    required>
             </label>
-            <label class="contact-flex-field" for="email">
+            <label class="contact-flex-field" id="emailLabel" for="email">
                 Email
-                <input id="email" type="email" role="text" placeholder="john.smith@email.com" required>
+                <input id="email" type="email" role="text" aria-labelledby="emailLabel"
+                    placeholder="john.smith@email.com" required>
             </label>
-            <label class="contact-flex-field" for="subject">
+            <label class="contact-flex-field" id="subjectLabel" for="subject">
                 Subject
-                <input id="subject" type="text" role="text" placeholder="Your subject">
+                <input id="subject" type="text" role="text" aria-labelledby="subjectLabel" placeholder="Your subject">
             </label>
-            <label class="contact-flex-field" for="message">
+            <label class="contact-flex-field" id="messageLabel" for="message">
                 Message
-                <textarea style="height: 5rem;" name="message" id="message" role="textbox" ></textarea>
+                <textarea style="height: 5rem;" name="message" id="message" aria-labelledby="messageLabel"
+                    role="textbox"></textarea>
             </label>
         </div>
 

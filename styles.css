@@ -134,3 +134,37 @@ ul li {
 li img {
     width: 5rem;
 }
+
+.about-us-well {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    padding: 2rem;
+}
+
+.about-us-grid-item {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #F5DFBB;
+    border-radius: 35px;
+    padding: 5rem;
+}
+
+.about-us-grid-item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-grid-item h1 {
+    padding: 3rem;
+    color: #F5DFBB;
+    background-color: #562C2C;
+    border-radius: 35px;
+}
+
+.about-us-grid-item-2 img {
+    height: 6rem;
+}

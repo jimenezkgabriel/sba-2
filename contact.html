@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <div class="banner-grid-container">
             <div class="grid-item-1" alt="The company banner."></div>
             <div class="grid-item-2 logo-flex">
                 <img src="/images/logoipsum-386.png" alt="The company logo.">
                 <div>Accessible Design Co.</div>
             </div>
-            <nav class="grid-item-3 nav-flex">
+            <nav class="grid-item-3 nav-flex" role="navigation">
                 <ul class="nav-other-flex">
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/about.html">About</a></li>
@@ -28,30 +28,30 @@
         </div>
     </header>
     <h1 style="text-align: center; font-size: 4rem;">Contact</h1>
-    <form class="contact-grid-container">
+    <form class="contact-grid-container" role="form">
         <div class="contact-flex-container">
             <label class="contact-flex-field" for="username">
                 Name
-                <input id="username" type="text">
+                <input id="username" type="text" role="text" placeholder="John Smith" required>
             </label>
             <label class="contact-flex-field" for="email">
                 Email
-                <input id="email" type="email">
+                <input id="email" type="email" role="text" placeholder="john.smith@email.com" required>
             </label>
             <label class="contact-flex-field" for="subject">
                 Subject
-                <input id="subject" type="text">
+                <input id="subject" type="text" role="text" placeholder="Your subject">
             </label>
             <label class="contact-flex-field" for="message">
                 Message
-                <textarea style="height: 5rem;" name="message" id="message"></textarea>
+                <textarea style="height: 5rem;" name="message" id="message" role="textbox" ></textarea>
             </label>
         </div>
 
     </form>
 </body>
 
-<footer>
+<footer role="footer">
     <div class="footer-container">
         <div class="footer-grid-item footer-flex">
             <ul class="nav-other-flex">

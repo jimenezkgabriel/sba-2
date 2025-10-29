@@ -283,3 +283,35 @@ li img {
     display: flex;
     flex-direction: column;
 }
+
+@media(max-width: 426px) {
+    .banner-grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-flex {
+        display: none;
+    }
+
+    .nav-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-other-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        font-size: 1.7rem;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+}

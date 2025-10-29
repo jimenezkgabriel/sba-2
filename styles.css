@@ -257,3 +257,29 @@ li img {
 .services-grid-item-4 img {
     height: 3rem;
 }
+
+.contact-grid-container {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-auto-rows: 100px;
+    margin-bottom: 3rem;
+}
+
+.contact-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: #F5DFBB;
+    padding: 1.3rem;
+    border-radius: 35px;
+    font-size: 2rem;
+}
+
+.contact-flex-field {
+    display: flex;
+    flex-direction: column;
+}

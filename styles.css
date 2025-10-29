@@ -109,3 +109,28 @@ ul li {
     border-radius: 45px;
     cursor: pointer;
 }
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-grid-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #127475;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-other-flex li {
+    color: #F5DFBB;
+    font-size: 1.3rem;
+}
+
+li img {
+    width: 5rem;
+}
